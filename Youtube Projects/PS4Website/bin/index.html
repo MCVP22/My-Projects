@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gaming Website Page - Easy Tutorial</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="https://www.playstation.com/en-us/">
+                <img src="images/logo.png" alt="" class="logo">
+            </a>
+            <nav>
+                <ul id="menuList">
+                    <li><a href="https://www.playstation.com/en-us/accessories/">Game Controllers</a></li>
+                    <li><a href="https://www.playstation.com/en-us/ps-vr/ps-vr-games/?smcid=pdc%3Aen-us%3Aaccessories%3Aprimary%20nav%3Amsg-games%3Aps-vr">VR Accessories</a></li>
+                    <li><a href="https://www.playstation.com/en-us/ps5/games/?smcid=pdc%3Aen-us%3Aps-vr%3Aprimary%20nav%3Amsg-games%3Aps5">PlayStation 5</a></li>
+                    <li><a href="https://www.playstation.com/en-us/ps-plus/?smcid=pdc%3Aen-us%3Aps5-games%3Aprimary%20nav%3Amsg-services%3Aps-plus">PlayStation Plus</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>PS4 V2<br>Dualshock 4 &trade;</h2>
+                <h3>Wireless Controller for Playstation 4</h3>
+                <p>(Compatible/Generic)</p>
+                <h4>$39.99</h4>
+                <a href="https://www.playstation.com/en-us/accessories/dualshock-4-wireless-controller/"><button type="button">Buy Now
+                    <img src="images/arrow.png">
+                </button></a>
+
+            </div>
+            <div class="col-2">
+                <img src="images/controller.png" class="controller">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="images/add.png">
+                    <p><small>Add to Cart</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.facebook.com/playstation/">
+                <img src="images/fb.png">
+            </a>
+            <a href="https://www.instagram.com/playstation/">
+                <img src="images/ig.png">
+            </a>
+            <a href="https://twitter.com/PlayStation?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                <img src="images/tw.png">
+            </a>
+        </div>
+
+        <p>Copyright &copy; 2022</p>
+
+    </div>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "130px";
+            } else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

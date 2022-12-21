@@ -1,4 +1,5 @@
-public class Array1 {
+public class Array1 
+{
     public static void main(String[] args)
     {
         Array1 a1 = new Array1();
@@ -6,6 +7,7 @@ public class Array1 {
         float avg = a1.averData(scores, scores.length);
         System.out.println("Average score" + avg);
     }
+
     private float averData(int[] numbers, int size)
     {
         int i, sum;

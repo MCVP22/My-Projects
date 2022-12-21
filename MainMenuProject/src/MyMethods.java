@@ -9,13 +9,9 @@ public class MyMethods
     public void productNoNegative() throws IOException
     {
         System.out.println("Welcome to product No Negative");
-
-        System.out.println("Here you'll enter values: ");
-    
-        Scanner input = new Scanner(System.in);
-
         System.out.print("Enter a list of values");
-
+        
+        Scanner input = new Scanner(System.in);
         String s = input.nextLine();
         String strNums[] = s.split("");
 
